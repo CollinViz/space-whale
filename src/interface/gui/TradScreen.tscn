@@ -1,9 +1,12 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://src/interface/gui/TradScreen.gd" type="Script" id=1]
 
 [node name="CenterContainer" type="CenterContainer"]
 anchor_right = 1.0
 anchor_bottom = 0.083
 margin_bottom = 0.200001
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -49,3 +52,7 @@ margin_left = 241.0
 margin_right = 324.0
 margin_bottom = 40.0
 text = "Buy Y Parts"
+[connection signal="value_changed" from="Control/HBoxContainer/SpinBox" to="." method="_on_SpinBox_value_changed"]
+[connection signal="pressed" from="Control/HBoxContainer/ButMax" to="." method="_on_ButMax_pressed"]
+[connection signal="pressed" from="Control/HBoxContainer/butBuy1" to="." method="_on_butBuy1_pressed"]
+[connection signal="pressed" from="Control/HBoxContainer/butBuy2" to="." method="_on_butBuy2_pressed"]

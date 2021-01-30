@@ -14,6 +14,7 @@ onready var Water = $Panel/Water
 func _ready():
 	update_stock()
 	var _x = PlayerData.connect("updated",self,"update_stock")
+	var _y = PlayerData.connect("QuestItemUpdate",self,"update_quest")
 	pass # Replace with function body.
 
 
@@ -23,6 +24,17 @@ func update_stock():
 	Parts.ResourceCount = PlayerData.get_Inventory("Parts")
 	Water.ResourceCount = PlayerData.get_Inventory("Water") 
 
+func update_quest():
+	for key in PlayerData.QuestItems:
+		if PlayerData.QuestItems[key]:
+			match(key):
+				"Broom":
+					$Panel/QuestItem1.visible=true
+				"Map":
+					$Panel/QuestItem2.visible=true
+				"Storage":
+					$Panel/QuestItem3.visible=true
+				
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass

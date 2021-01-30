@@ -78,7 +78,7 @@ margin_left = 937.0
 margin_right = 984.0
 margin_bottom = 20.0
 size_flags_vertical = 0
-text = "Trade"
+text = "Close"
 
 [node name="Trad" type="Control" parent="Panel"]
 anchor_right = 0.997
