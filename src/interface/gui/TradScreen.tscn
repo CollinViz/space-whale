@@ -1,0 +1,51 @@
+[gd_scene format=2]
+
+[node name="CenterContainer" type="CenterContainer"]
+anchor_right = 1.0
+anchor_bottom = 0.083
+margin_bottom = 0.200001
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" type="Control" parent="."]
+margin_left = 512.0
+margin_top = 25.0
+margin_right = 512.0
+margin_bottom = 25.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Control/HBoxContainer"]
+margin_top = 13.0
+margin_right = 30.0
+margin_bottom = 27.0
+text = "Gold"
+
+[node name="SpinBox" type="SpinBox" parent="Control/HBoxContainer"]
+margin_left = 34.0
+margin_right = 108.0
+margin_bottom = 40.0
+
+[node name="ButMax" type="Button" parent="Control/HBoxContainer"]
+margin_left = 112.0
+margin_right = 150.0
+margin_bottom = 40.0
+text = "Max"
+
+[node name="butBuy1" type="Button" parent="Control/HBoxContainer"]
+margin_left = 154.0
+margin_right = 237.0
+margin_bottom = 40.0
+text = "Buy X Food"
+
+[node name="butBuy2" type="Button" parent="Control/HBoxContainer"]
+margin_left = 241.0
+margin_right = 324.0
+margin_bottom = 40.0
+text = "Buy Y Parts"

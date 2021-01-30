@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://src/interface/gui/Dialogfrm.gd" type="Script" id=1]
+[ext_resource path="res://src/interface/gui/TradScreen.tscn" type="PackedScene" id=2]
 
 [node name="Dialogfrm" type="Control"]
 anchor_right = 1.0
@@ -78,6 +79,29 @@ margin_right = 984.0
 margin_bottom = 20.0
 size_flags_vertical = 0
 text = "Trade"
+
+[node name="Trad" type="Control" parent="Panel"]
+anchor_right = 0.997
+anchor_bottom = 1.0
+margin_top = 57.0
+margin_right = 0.0719604
+margin_bottom = 2.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TradItem1" parent="Panel/Trad" instance=ExtResource( 2 )]
+anchor_top = 0.275
+anchor_bottom = 0.654
+margin_top = -0.375
+margin_right = 3.0
+margin_bottom = 7.24999
+
+[node name="TradItem2" parent="Panel/Trad" instance=ExtResource( 2 )]
+anchor_right = 1.003
+anchor_bottom = 0.286
+margin_right = -0.0629883
+margin_bottom = 4.25
 [connection signal="pressed" from="Panel/HBoxContainer/ButtonNext" to="." method="_on_ButtonNext_pressed"]
 [connection signal="pressed" from="Panel/HBoxContainer/ButtonFinish" to="." method="_on_ButtonFinish_pressed"]
 [connection signal="pressed" from="Panel/HBoxContainer/ButtonTrade" to="." method="_on_ButtonTrade_pressed"]

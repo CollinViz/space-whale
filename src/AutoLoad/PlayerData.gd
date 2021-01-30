@@ -63,4 +63,4 @@ func checkPlayDataToNeeds(Needs:Dictionary)->bool:
 			else:
 				bOk = false
 		
-	return bOk 
+	return false #bOk 

@@ -13,10 +13,16 @@ onready var text_label := get_node("Panel/HBoxContainer/Text") as Label
 onready var NextBut = $Panel/HBoxContainer/ButtonNext
 onready var FinishBut = $Panel/HBoxContainer/ButtonFinish
 onready var TradBut = $Panel/HBoxContainer/ButtonTrade
+onready var TradUI = $Panel/Trad
+onready var TradLine1 = $Panel/Panel/Trad/TradItem1
+onready var TradLine2 = $Panel/Panel/Trad/TradItem2
 
 var dialog: Dictionary = {}
 var aMessage:Array = []
 var Index := 0;
+
+var aHas2Trad :=[]
+var aNeeds2Trad :=[]
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	text_label.text = "planetWantThuis asdfasdfdas"
@@ -34,7 +40,16 @@ func start(planetWant):
 	for key in dialog.DialogTree:
 		aMessage.append(key)
 		#if str(key).begins_with("Needs":
+	aHas2Trad =[]
+	for key in dialog.tradFor:
+		if dialog.tradFor[key]>0:
+			aHas2Trad.append(key)
 	
+	aNeeds2Trad =[]
+	for key in dialog.Needs:
+		if dialog.Needs[key]>0:
+			aNeeds2Trad.append(key)
+
 	NextBut.show()
 	FinishBut.hide()
 	TradBut.hide()
@@ -46,7 +61,7 @@ func start(planetWant):
 	name_text.text = planetWant.Name
 
 func _showDialogOption(idx:int):
-	
+	TradUI.hide()
 	var key = aMessage[idx]
 	text_label.text = dialog.DialogTree[key].text
 	if str(key).begins_with("Needs"):
@@ -76,7 +91,15 @@ func _showDialogOption(idx:int):
 	Index+=1
 
 func showTradDialog():
-	pass 
+	pass
+	TradUI.show()
+	# if aNeeds2Trad.size()-1==2:
+	# 	TradLine2.show()
+	# else:
+	# 	TradLine2.hide()
+	
+	#TradLine1.setup(dialog.tradFor,dialog.Needs,aNeeds2Trad,aHas2Trad)
+	 
 
 func showTradQuestDialog():
 	pass 
