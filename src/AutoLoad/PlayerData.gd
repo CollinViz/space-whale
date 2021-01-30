@@ -1,6 +1,7 @@
 extends Node
  
 signal updated
+signal QuestItemUpdate
 signal died
 
 var score: = 0 setget set_score
@@ -48,11 +49,16 @@ func set_PlayerBeenPlanet(PlantName:String) ->void:
 	PlanetVisited[PlantName]=PlantName
 
 func checkQuest(_QuestItemsNeeds:Dictionary,QuestItemsHas:String) -> bool:
-	 
+	if QuestItemsHas=="":
+		return false 
 	if QuestItems.has(QuestItemsHas): 
 		return true
 	
 	return false
+
+func add_QuestItem(QuestItem:String):
+	QuestItems[QuestItem]=true
+	emit_signal("QuestItemUpdate")
 
 func checkPlayDataToNeeds(Needs:Dictionary)->bool:
 	var bOk=false
@@ -63,4 +69,4 @@ func checkPlayDataToNeeds(Needs:Dictionary)->bool:
 			else:
 				bOk = false
 		
-	return false #bOk 
+	return bOk 

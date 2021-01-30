@@ -5,12 +5,12 @@ extends Node2D
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-export (int) var speed = 10
+export (int) var speed = 25
 export (int) var drag = 3000
 
-export (int) var cameraTop = -10000000
+export (int) var cameraTop = -500
 export (int) var cameraBottom = 10000000
-export (int) var cameraLeft = -10000000
+export (int) var cameraLeft = -500
 export (int) var cameraRight = 10000000
 
 

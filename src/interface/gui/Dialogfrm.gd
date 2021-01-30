@@ -69,12 +69,13 @@ func _showDialogOption(idx:int):
 			NextBut.hide()
 			FinishBut.hide()
 			TradBut.show()
-			showTradDialog()
+			_showTradDialog()
 	if str(key).begins_with("Has"):
 		FinishBut.show()
 		TradBut.hide()
 		NextBut.hide()
 	if str(key).begins_with("Quest"):
+		TradBut.text="Close"
 		if PlayerData.checkPlayDataToNeeds(dialog.questNeeds):
 			NextBut.hide()
 			FinishBut.hide()
@@ -90,18 +91,25 @@ func _showDialogOption(idx:int):
 		NextBut.hide()
 	Index+=1
 
-func showTradDialog():
-	pass
+func _showTradDialog():
+	var i := 0;
+	$Panel/Trad/TradItem1.hide()
+	$Panel/Trad/TradItem2.hide()
+	for itemNeed  in aNeeds2Trad:
+		if PlayerData.get_Inventory(itemNeed)>0:
+			_showTradDialogGui(i,itemNeed,PlayerData.get_Inventory(itemNeed))
+			i+=1
+		
 	TradUI.show()
-	# if aNeeds2Trad.size()-1==2:
-	# 	TradLine2.show()
-	# else:
-	# 	TradLine2.hide()
-	
-	#TradLine1.setup(dialog.tradFor,dialog.Needs,aNeeds2Trad,aHas2Trad)
-	 
+
+func _showTradDialogGui(row:int,Resource:String,soh:int)->void:
+	if row==0:
+		$Panel/Trad/TradItem1.setup(Resource,soh,dialog.tradFor)
+	if row==1:
+		$Panel/Trad/TradItem2.setup(Resource,soh,dialog.tradFor) 
 
 func showTradQuestDialog():
+	TradBut.text="Trade"
 	pass 
 
 func _on_ButtonNext_pressed():
@@ -120,5 +128,10 @@ func _on_ButtonFinish_pressed():
 
 
 func _on_ButtonTrade_pressed():
-	
-	pass # Replace with function body.
+	if TradBut.text=="Trade":
+		TradBut.text="Close"
+		PlayerData.add_QuestItem(dialog.questHas)
+		for key in dialog.questNeeds:
+			PlayerData.remove_Inventory(key,dialog.questNeeds[key])
+	emit_signal("dialogue_ended")
+	hide() 

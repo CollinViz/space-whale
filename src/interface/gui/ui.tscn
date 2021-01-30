@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://src/interface/gui/ui.gd" type="Script" id=1]
 [ext_resource path="res://src/interface/gui/ResorceIcon.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/interface/gui/QuestItem.tscn" type="PackedScene" id=3]
 
 [node name="ui" type="Control"]
 anchor_right = 1.0
@@ -37,5 +38,29 @@ ResourceIcon = "F"
 [node name="Parts" parent="Panel" instance=ExtResource( 2 )]
 margin_left = 450.0
 margin_right = 600.0
-ResourceName = "Part"
+ResourceName = "Parts"
 ResourceIcon = "P"
+
+[node name="QuestItem3" parent="Panel" instance=ExtResource( 3 )]
+visible = false
+margin_left = 602.242
+margin_top = 10.0794
+margin_right = 642.242
+margin_bottom = 50.0794
+ItemText = "Storage"
+
+[node name="QuestItem2" parent="Panel" instance=ExtResource( 3 )]
+visible = false
+margin_left = 750.913
+margin_top = 10.0794
+margin_right = 790.913
+margin_bottom = 50.0794
+ItemText = "Map"
+
+[node name="QuestItem1" parent="Panel" instance=ExtResource( 3 )]
+visible = false
+margin_left = 868.085
+margin_top = 10.0793
+margin_right = 908.085
+margin_bottom = 50.0793
+ItemText = "Whale Scratcher"

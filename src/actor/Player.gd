@@ -1,10 +1,10 @@
 extends KinematicBody2D
 
 
-export (float, 0, 3200, 100) var linear_speed_max := 800.0 setget set_linear_speed_max
-export (float, 0, 10000, 100) var linear_acceleration_max := 80.0 setget set_linear_acceleration_max
-export (float, 0, 100, 0.1) var arrival_tolerance := 25.0 setget set_arrival_tolerance
-export (float, 0, 500, 10) var deceleration_radius := 125.0 setget set_deceleration_radius
+export (float, 0, 3200, 100) var linear_speed_max := 1600.0 setget set_linear_speed_max
+export (float, 0, 10000, 100) var linear_acceleration_max := 5000.0 setget set_linear_acceleration_max
+export (float, 0, 100, 0.1) var arrival_tolerance := 35.0 setget set_arrival_tolerance
+export (float, 0, 500, 10) var deceleration_radius := 180.0 setget set_deceleration_radius
 
 var agent := GSAIKinematicBody2DAgent.new(self)
 var target := GSAIAgentLocation.new()
@@ -31,6 +31,7 @@ func setup() -> void:
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	agent.position = GSAIUtils.to_vector3( self.position)
 	setup()
 
 # func _input(event):
