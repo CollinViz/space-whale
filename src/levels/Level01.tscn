@@ -1,26 +1,54 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://src/object/Planet.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/object/background1.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/actor/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/actor/Camera.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/levels/Level01.gd" type="Script" id=5]
+[ext_resource path="res://src/levels/TargetDrawer.gd" type="Script" id=6]
+[ext_resource path="res://src/interface/gui/Dialogfrm.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/interface/gui/ui.tscn" type="PackedScene" id=8]
 
 [node name="Level01" type="Node2D"]
+script = ExtResource( 5 )
 
 [node name="background1" parent="." instance=ExtResource( 2 )]
-margin_left = -231.826
-margin_top = -307.42
-margin_right = 1268.17
-margin_bottom = 892.58
+margin_left = -1357.06
+margin_top = -1018.05
+margin_right = 2738.94
+margin_bottom = 1381.95
+mouse_filter = 2
+mouse_default_cursor_shape = 13
 
-[node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 536.332, 151.029 )
-scale = Vector2( 0.5, 0.5 )
+[node name="TargetDrawer" type="Node2D" parent="."]
+visible = false
+script = ExtResource( 6 )
 
 [node name="Planet" parent="." instance=ExtResource( 1 )]
 position = Vector2( 98.7042, 460.223 )
+Name = "Plant1"
 
 [node name="Planet2" parent="." instance=ExtResource( 1 )]
 position = Vector2( 575.576, 526.819 )
+Name = "Plant2"
 
 [node name="Planet3" parent="." instance=ExtResource( 1 )]
 position = Vector2( 902.608, 105.839 )
+Name = "Plant3"
+
+[node name="Camera" parent="." instance=ExtResource( 4 )]
+position = Vector2( 509.009, 297.342 )
+cameraTop = -500
+cameraBottom = 1300
+cameraLeft = -500
+cameraRight = 1500
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+scale = Vector2( 0.5, 0.5 )
+deceleration_radius = 180.0
+
+[node name="Gui" type="CanvasLayer" parent="."]
+
+[node name="Dialogfrm" parent="Gui" instance=ExtResource( 7 )]
+
+[node name="ui" parent="Gui" instance=ExtResource( 8 )]
