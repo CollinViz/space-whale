@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://src/object/Planet.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/object/background1.tscn" type="PackedScene" id=2]
@@ -7,6 +7,9 @@
 [ext_resource path="res://src/levels/Level01.gd" type="Script" id=5]
 [ext_resource path="res://src/levels/TargetDrawer.gd" type="Script" id=6]
 [ext_resource path="res://src/interface/gui/Gui.tscn" type="PackedScene" id=7]
+[ext_resource path="res://assests/Planet_0008_1.png" type="Texture" id=8]
+[ext_resource path="res://assests/Planet_0002_7.png" type="Texture" id=9]
+[ext_resource path="res://assests/Planet_0000_9.png" type="Texture" id=10]
 
 [node name="Level01" type="Node2D"]
 script = ExtResource( 5 )
@@ -25,10 +28,12 @@ script = ExtResource( 6 )
 
 [node name="Planet" parent="." instance=ExtResource( 1 )]
 position = Vector2( 98.7042, 460.223 )
+Skin = ExtResource( 8 )
 Name = "Plant1"
 
 [node name="Planet2" parent="." instance=ExtResource( 1 )]
 position = Vector2( 575.576, 526.819 )
+Skin = ExtResource( 10 )
 Name = "Plant2"
 has = {
 "Food": 0,
@@ -47,6 +52,7 @@ QuestDialog = ""
 
 [node name="Planet3" parent="." instance=ExtResource( 1 )]
 position = Vector2( 902.608, 105.839 )
+Skin = ExtResource( 9 )
 Name = "Plant3"
 
 [node name="Player" parent="." instance=ExtResource( 3 )]

@@ -1,5 +1,5 @@
 extends Node2D
-
+export (Texture) var Skin:Texture = load("res://assests/circle.png")
 export (String) var Name:String = "X1234" 
 export (Dictionary) var needs:Dictionary = {Gold=0,Food=1,Parts=0,Water=0} 
 export (Dictionary) var has:Dictionary = {Gold=1,Food=0,Parts=0,Water=0.5} 
@@ -14,6 +14,7 @@ export (String) var QuestDialog:String ="plantSayQuest"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$Sprite.texture = Skin
 	pass # Replace with function body.
 
 
