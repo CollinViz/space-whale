@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://src/object/Planet.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/object/background1.tscn" type="PackedScene" id=2]
@@ -9,35 +9,116 @@
 [ext_resource path="res://assests/Planet_0003_6.png" type="Texture" id=7]
 [ext_resource path="res://assests/Planet_0005_4.png" type="Texture" id=8]
 [ext_resource path="res://assests/Planet_0004_5.png" type="Texture" id=9]
+[ext_resource path="res://src/object/IceFeild.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/object/PartsField.tscn" type="PackedScene" id=11]
 
 [node name="Level02" type="Node2D"]
 script = ExtResource( 6 )
 
 [node name="background1" parent="." instance=ExtResource( 2 )]
+margin_left = -1214.8
+margin_top = -843.267
+margin_right = 2881.2
+margin_bottom = 1556.73
 
 [node name="Planet" parent="." instance=ExtResource( 1 )]
-position = Vector2( 344.589, 964.398 )
+position = Vector2( 157.913, 149.811 )
 Skin = ExtResource( 7 )
+needs = {
+"Food": 0,
+"Gold": 0,
+"Parts": 0,
+"Water": 1
+}
+has = {
+"Food": 1,
+"Gold": 1,
+"Parts": 0,
+"Water": 0.0
+}
+QuestItemsNeeds = {
+"Food": 0,
+"Gold": 0,
+"Parts": 5,
+"Water": 0
+}
+QuestItemsHas = "map"
 FirstDialog = "1b_plantSayHello"
 QuestDialog = "1b_plantSayQuest"
 
 [node name="Planet2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1993.11, 256.869 )
+position = Vector2( 1025.79, 188.987 )
 Skin = ExtResource( 9 )
+needs = {
+"Food": 0,
+"Gold": 0,
+"Parts": 0,
+"Water": 1
+}
+has = {
+"Food": 1,
+"Gold": 0,
+"Parts": 0,
+"Water": 0.0
+}
+QuestItemsNeeds = {
+"Food": 0,
+"Gold": 0,
+"Parts": 0,
+"Water": 0
+}
+QuestItemsHas = ""
 FirstDialog = "2b_plantSayHello"
-QuestDialog = "2b_plantSayQuest"
+QuestDialog = ""
 
 [node name="Planet3" parent="." instance=ExtResource( 1 )]
-position = Vector2( 2178.63, 1308.13 )
+position = Vector2( 719.162, 567.082 )
 Skin = ExtResource( 8 )
+needs = {
+"Food": 0,
+"Gold": 0,
+"Parts": 0,
+"Water": 1
+}
+has = {
+"Food": 1,
+"Gold": 0,
+"Parts": 2,
+"Water": 0.0
+}
+QuestItemsHas = ""
 FirstDialog = "3b_plantSayHello"
-QuestDialog = "3b_plantSayQuest"
+QuestDialog = ""
 
 [node name="Camera" parent="." instance=ExtResource( 4 )]
-position = Vector2( 1474.62, 899.04 )
+position = Vector2( 494.18, 306.952 )
+cameraBottom = 1300
+cameraRight = 1500
 
 [node name="Player" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1583.17, 914.105 )
+position = Vector2( 508.368, 331.449 )
+scale = Vector2( 0.5, 0.5 )
 deceleration_radius = 180.0
 
 [node name="Gui" parent="." instance=ExtResource( 3 )]
+
+[node name="IceFeild" parent="." instance=ExtResource( 10 )]
+position = Vector2( 810.137, 146.272 )
+
+[node name="IceFeild2" parent="." instance=ExtResource( 10 )]
+position = Vector2( 240.731, 465.568 )
+
+[node name="IceFeild3" parent="." instance=ExtResource( 10 )]
+position = Vector2( 428.137, 152.715 )
+
+[node name="IceFeild4" parent="." instance=ExtResource( 10 )]
+position = Vector2( 743.061, 289.88 )
+
+[node name="IceFeild5" parent="." instance=ExtResource( 10 )]
+position = Vector2( 932.019, 457.38 )
+
+[node name="PartsField2" parent="." instance=ExtResource( 11 )]
+position = Vector2( 401.637, 701.45 )
+
+[node name="PartsField" parent="." instance=ExtResource( 11 )]
+position = Vector2( 446.891, 480.833 )

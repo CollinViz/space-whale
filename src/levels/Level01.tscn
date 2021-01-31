@@ -29,7 +29,7 @@ script = ExtResource( 6 )
 position = Vector2( 98.7042, 460.223 )
 Skin = ExtResource( 8 )
 Name = "Planet1"
-FirstDialog = "A1_Hello"
+FirstDialog = "1a_plantSayHello"
 QuestDialog = "plantSayQuestBroom"
 
 [node name="Planet2" parent="." instance=ExtResource( 1 )]
@@ -49,12 +49,28 @@ QuestItemsNeeds = {
 "Water": 0
 }
 QuestItemsHas = ""
+FirstDialog = "1b_plantSayHello"
 QuestDialog = ""
 
 [node name="Planet3" parent="." instance=ExtResource( 1 )]
 position = Vector2( 902.608, 105.839 )
 Skin = ExtResource( 9 )
 Name = "Plant3"
+needs = {
+"Food": 0,
+"Gold": 1,
+"Parts": 0,
+"Water": 0
+}
+has = {
+"Food": 1,
+"Gold": 0,
+"Parts": 1,
+"Water": 0.0
+}
+QuestItemsHas = ""
+FirstDialog = "1c_plantSayHello"
+QuestDialog = ""
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
 scale = Vector2( 0.5, 0.5 )

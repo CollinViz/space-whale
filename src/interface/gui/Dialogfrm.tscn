@@ -56,7 +56,7 @@ text = "Name"
 
 [node name="Text" type="RichTextLabel" parent="Panel/HBoxContainer"]
 margin_left = 42.0
-margin_right = 930.0
+margin_right = 933.0
 margin_bottom = 150.0
 size_flags_horizontal = 3
 size_flags_vertical = 5
@@ -71,19 +71,22 @@ size_flags_vertical = 3
 text = "Next"
 
 [node name="ButtonFinish" type="Button" parent="Panel/HBoxContainer"]
-margin_left = 934.0
-margin_right = 984.0
+visible = false
+margin_left = 883.0
+margin_right = 933.0
 margin_bottom = 150.0
 size_flags_vertical = 3
 text = "Finish"
 
 [node name="ButtonTrade" type="Button" parent="Panel/HBoxContainer"]
-visible = false
 margin_left = 937.0
 margin_right = 984.0
 margin_bottom = 150.0
-hint_tooltip = "End conversation"
+size_flags_vertical = 3
 text = "Close"
+__meta__ = {
+"_editor_description_": ""
+}
 
 [node name="Trad" type="Control" parent="Panel"]
 anchor_right = 0.997

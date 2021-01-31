@@ -77,25 +77,30 @@ func _showDialogOption(idx:int):
 			FinishBut.hide()
 			TradBut.show()
 			_showTradDialog()
-	if str(key).begins_with("Has"):
+	elif str(key).begins_with("Has"):
 		FinishBut.show()
 		TradBut.hide()
 		NextBut.hide()
-	if str(key).begins_with("Quest"):
+	elif str(key).begins_with("Quest"):
 		TradBut.text="Close"
 		if PlayerData.checkPlayDataToNeeds(dialog.questNeeds):
 			NextBut.hide()
 			FinishBut.hide()
 			TradBut.show()
 			showTradQuestDialog()
-	if str(key).begins_with("No"):
+	elif str(key).begins_with("No"):
 		FinishBut.show()
 		TradBut.hide()
 		NextBut.hide()
-	if str(key).begins_with("Complete"):
+	elif str(key).begins_with("Complete"):
 		FinishBut.show()
 		TradBut.hide()
 		NextBut.hide()
+	else:
+		if Index+1>aMessage.size()-1:
+			FinishBut.show()
+			TradBut.hide()
+			NextBut.hide()
 	Index+=1
 
 func _showTradDialog():
@@ -120,8 +125,8 @@ func showTradQuestDialog():
 	pass 
 
 func _on_ButtonNext_pressed():
-	if Index+1>aMessage.size()-1:
-		_on_ButtonFinish_pressed()
+	#if Index+1>aMessage.size()-1:
+	#	_on_ButtonFinish_pressed()
 	if Index+1==aMessage.size()-1:
 		NextBut.hide()
 		FinishBut.show()

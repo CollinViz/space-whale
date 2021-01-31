@@ -1,6 +1,7 @@
 {
     "001" : {"name":"whale", "expression": "neutral", "text":"You can ask me to move by left clicking" },
     "002" : {"name":"whale", "expression": "neutral", "text":"To Move the camera use W = up,A = down ,S = left ,D = down" },
-    "003" : {"name":"whale", "expression": "neutral", "text":"Explore some planets and trade with them for supplies to get me home. You will have a whale of a time. Promise!" } 
+    "003" : {"name":"whale", "expression": "neutral", "text":"Explore some planets and trade with them for supplies to get me home. You will have a whale of a time. Promise!" }, 
+    "004" : {"name":"whale", "expression": "neutral", "text":"Explore some planets and trade with them for supplies to get me home. You will have a whale of a time. Promise!" } 
 
 }
