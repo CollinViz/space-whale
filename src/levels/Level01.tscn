@@ -19,7 +19,6 @@ margin_left = -2012.76
 margin_top = -1146.34
 margin_right = 2083.24
 margin_bottom = 1253.66
-mouse_filter = 2
 mouse_default_cursor_shape = 13
 
 [node name="TargetDrawer" type="Node2D" parent="."]

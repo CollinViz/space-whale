@@ -9,7 +9,7 @@ signal dialogue_ended
 onready var name_text :=$Panel/HBoxContainer/Name
 #onready var text_label :=$Panel/HBoxContainer/Panel/HBoxContainer/Text
 #$Panel/HBoxContainer/Text
-onready var text_label := get_node("Panel/HBoxContainer/Text") as Label
+onready var text_label := get_node("Panel/HBoxContainer/Text") as RichTextLabel
 onready var NextBut = $Panel/HBoxContainer/ButtonNext
 onready var FinishBut = $Panel/HBoxContainer/ButtonFinish
 onready var TradBut = $Panel/HBoxContainer/ButtonTrade
@@ -26,6 +26,7 @@ var aNeeds2Trad :=[]
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	text_label.text = "planetWantThuis asdfasdfdas"
+	SoundController.stop_Dialog()
 	hide()
 	pass # Replace with function body.
 
@@ -49,10 +50,14 @@ func start(planetWant):
 	for key in dialog.Needs:
 		if dialog.Needs[key]>0:
 			aNeeds2Trad.append(key)
-
-	NextBut.show()
-	FinishBut.hide()
-	TradBut.hide()
+	if aMessage.size()-1==0:
+		NextBut.hide()
+		FinishBut.show()
+		TradBut.hide()
+	else:		
+		NextBut.show()
+		FinishBut.hide()
+		TradBut.hide()
 	show()
 
 	print(planetWant)
@@ -61,6 +66,8 @@ func start(planetWant):
 	name_text.text = planetWant.Name
 
 func _showDialogOption(idx:int):
+	 
+	SoundController.play_Dialog()
 	TradUI.hide()
 	var key = aMessage[idx]
 	text_label.text = dialog.DialogTree[key].text
@@ -123,6 +130,7 @@ func _on_ButtonNext_pressed():
 	_showDialogOption(Index)
 
 func _on_ButtonFinish_pressed():
+	SoundController.stop_Dialog()
 	emit_signal("dialogue_ended")
 	hide()
 
@@ -134,4 +142,5 @@ func _on_ButtonTrade_pressed():
 		for key in dialog.questNeeds:
 			PlayerData.remove_Inventory(key,dialog.questNeeds[key])
 	emit_signal("dialogue_ended")
+	SoundController.stop_Dialog()
 	hide() 

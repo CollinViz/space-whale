@@ -13,6 +13,7 @@ onready var Camera :=$Camera
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$Camera.position = $Player.position 
+	PlayerData.set_CurrentLevel(3)
 	#PlayerData.reset()
 	
 # func _unhandled_input(event: InputEvent) -> void:

@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Sound/Relaxing Ambient Music - Royalty Free - Singularity.ogg" type="AudioStream" id=1]
+[ext_resource path="res://src/interface/Sound/Sound.gd" type="Script" id=2]
+[ext_resource path="res://Sound/DialogSound/murr_murr.ogg" type="AudioStream" id=3]
+
+[node name="Sound" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Dialog" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 3 )
+
+[node name="world" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 1 )
+autoplay = true
+
+[node name="sfx1" type="AudioStreamPlayer2D" parent="."]

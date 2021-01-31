@@ -53,6 +53,7 @@ ResourceIcon = "P"
 iconTexture = ExtResource( 7 )
 
 [node name="QuestItem3" parent="Panel" instance=ExtResource( 3 )]
+visible = false
 margin_left = 602.242
 margin_top = 10.0794
 margin_right = 642.242
@@ -61,6 +62,7 @@ ItemText = "Storage"
 iconTexture = ExtResource( 10 )
 
 [node name="QuestItem2" parent="Panel" instance=ExtResource( 3 )]
+visible = false
 margin_left = 750.913
 margin_top = 10.0794
 margin_right = 790.913
@@ -69,6 +71,7 @@ ItemText = "Map"
 iconTexture = ExtResource( 9 )
 
 [node name="QuestItem1" parent="Panel" instance=ExtResource( 3 )]
+visible = false
 margin_left = 868.085
 margin_top = 10.0793
 margin_right = 908.085

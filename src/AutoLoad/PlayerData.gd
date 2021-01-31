@@ -1,7 +1,7 @@
 extends Node
  
 signal updated
-signal QuestItemUpdate
+signal QuestItemUpdate (NewQuestItem)
 signal died
 
 var score: = 0 setget set_score
@@ -10,18 +10,26 @@ var deaths: = 0 setget set_deaths
 var inventory ={Gold=0,Water=0,Food=0,Parts=0}
 var PlanetVisited ={}
 var QuestItems ={}
-
+var QuestItems_Names ={broom="broom",map="map",storage="storage"}
 var CurrentLevel := 1
+var LevelsDone :={}
 
 func reset():
 	self.score = 0
 	self.deaths = 0
-	inventory ={Gold=0,Water=0,Food=1,Parts=0}
+	inventory ={Gold=0,Water=15,Food=1,Parts=0}
 	PlanetVisited = {}
 	QuestItems={}
 	CurrentLevel = 1
+	LevelsDone ={}
 	emit_signal("updated")
 
+func isFirstTimeLevel(Level) -> bool:
+	return LevelsDone.has(str(Level))
+
+func set_CurrentLevel(Level:int)->void:
+	CurrentLevel = Level
+	LevelsDone[str(Level)] = true
 
 func get_Inventory(Invtype:String) -> int:
 	return inventory[Invtype]
@@ -62,7 +70,7 @@ func checkQuest(QuestItemsHas:String) -> bool:
 
 func add_QuestItem(QuestItem:String):
 	QuestItems[QuestItem]=true
-	emit_signal("QuestItemUpdate")
+	emit_signal("QuestItemUpdate",QuestItem)
 
 func checkPlayDataToNeeds(Needs:Dictionary)->bool:
 	var bOk=false

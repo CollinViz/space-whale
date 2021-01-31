@@ -41,4 +41,6 @@ func _on_quest_gui_input(event):
 
 
 func _on_Area2D_body_exited(_body):
+	
+	$quest/AnimationPlayer.play("Attention")
 	$quest.visible = false
