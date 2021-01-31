@@ -20,12 +20,18 @@ deceleration_radius = 180.0
 
 [node name="Planet" parent="." instance=ExtResource( 1 )]
 position = Vector2( 344.589, 964.398 )
+FirstDialog = "1b_plantSayHello"
+QuestDialog = "1b_plantSayQuest"
 
 [node name="Planet2" parent="." instance=ExtResource( 1 )]
 position = Vector2( 1993.11, 256.869 )
+FirstDialog = "2b_plantSayHello"
+QuestDialog = "2b_plantSayQuest"
 
 [node name="Planet3" parent="." instance=ExtResource( 1 )]
 position = Vector2( 2178.63, 1308.13 )
+FirstDialog = "3b_plantSayHello"
+QuestDialog = "3b_plantSayQuest"
 
 [node name="Camera" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1474.62, 899.04 )
