@@ -29,7 +29,8 @@ script = ExtResource( 6 )
 [node name="Planet" parent="." instance=ExtResource( 1 )]
 position = Vector2( 98.7042, 460.223 )
 Skin = ExtResource( 8 )
-Name = "Plant1"
+Name = "Planet1"
+FirstDialog = "A1_Hello"
 
 [node name="Planet2" parent="." instance=ExtResource( 1 )]
 position = Vector2( 575.576, 526.819 )
