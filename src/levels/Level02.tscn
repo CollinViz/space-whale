@@ -17,10 +17,11 @@
 script = ExtResource( 6 )
 
 [node name="background1" parent="." instance=ExtResource( 2 )]
-margin_left = -1214.8
-margin_top = -843.267
-margin_right = 2881.2
-margin_bottom = 1556.73
+margin_left = -694.37
+margin_top = -639.621
+margin_right = 3401.63
+margin_bottom = 1760.38
+rect_scale = Vector2( 1, 1 )
 
 [node name="Planet" parent="." instance=ExtResource( 1 )]
 position = Vector2( 157.913, 149.811 )

@@ -21,6 +21,7 @@ margin_left = -1354.17
 margin_top = -890.899
 margin_right = 2741.83
 margin_bottom = 1509.1
+rect_scale = Vector2( 1, 1 )
 
 [node name="Planet" parent="." instance=ExtResource( 2 )]
 Skin = ExtResource( 8 )
