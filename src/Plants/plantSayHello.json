@@ -1,5 +1,38 @@
 {
-    "Needs001" : {"name":"plant", "expression": "neutral", "text":"Hello Traveler we are looking for {0}" },
-    "No001" : {"name":"plant", "expression": "neutral", "text":"You have nothing we want" }, 
-    "Has001" : {"name":"plant", "expression": "neutral", "text":"We have items {0} " } 
+    "Needs001" : {"name":"plant", "expression": "neutral", "text":"Well , What is a whale doing in these woods? Aufully long way from home! Traveler we are looking for {0}" },
+    "No001" : {"name":"plant", "expression": "neutral", "text":"You have nothing we want" },
+    "Has001" : {"name":"plant", "expression": "neutral", "text":"We have items {0} " } ,
+
+    "Needs002" : {"name":"plant", "expression": "neutral", "text":"WELCOME BIG ORGANIC ORGANISM. WE NEED {0} FOR OUR LIBERATION QUEST" },
+    "No002" : {"name":"plant", "expression": "neutral", "text":"NEGATIVE.NO RESOURCES WE WANT. NEGATIVE." },
+    "Has002" : {"name":"plant", "expression": "neutral", "text":"WE HAVE {0} " },
+
+    "Needs003" : {"name":"plant", "expression": "neutral", "text":"Salutations, esteemed Traveler from our neighbouring galaxy. We are in urgent need of {0}" },
+    "No003" : {"name":"plant", "expression": "neutral", "text":"You have nothing we want. The absurdist extinction nullety of even presuming we might need anything from you!! Imagine that!" },
+    "Has003" : {"name":"plant", "expression": "neutral", "text":"We might perhaps purvey {0} items " },
+
+    "Needs004" : {"name":"plant", "expression": "neutral", "text":"Hy U. Sup! W wnt {0} Thnx! " },
+    "No004" : {"name":"plant", "expression": "neutral", "text":"Sry. Pass." },
+    "Has004" : {"name":"plant", "expression": "neutral", "text":"We sply {0} " },
+
+    "Needs005" : {"name":"plant", "expression": "neutral", "text":"D'day Fella! Well I'd be damned! Must have had a whale of a time getting here. We are looking for {0}" },
+    "No005" : {"name":"plant", "expression": "neutral", "text":"You have nothing we want" },
+    "Has005" : {"name":"plant", "expression": "neutral", "text":"We have items {0} " } ,
+
+    "Needs006" : {"name":"plant", "expression": "neutral", "text":"Sir! Yes Sir! Hello Traveler we are looking for {0}" },
+    "No006" : {"name":"plant", "expression": "neutral", "text":"Negative Sir! You have nothing we want. Sir!" },
+    "Has006" : {"name":"plant", "expression": "neutral", "text":"We have items {0} Sir!" },
+
+    "Needs007" : {"name":"plant", "expression": "neutral", "text":"Bruuuuuh! You whale braaah!? We Welcome you in the name of our master, antomoshere. We are looking for {0}" },
+    "No007" : {"name":"plant", "expression": "neutral", "text":"Sorry Bruuuh. You have nothing we want" },
+    "Has007" : {"name":"plant", "expression": "neutral", "text":"We have bounty of {0} items Bruuuh." },
+
+    "Needs008" : {"name":"plant", "expression": "neutral", "text":"Hello earthling Traveler from the beyond. Welcome to our humble planet.We are looking for {0}" },
+    "No008" : {"name":"plant", "expression": "neutral", "text":"Bless your heart,sweetheart. In our part of the cosmos, you have nothing we want." },
+    "Has008" : {"name":"plant", "expression": "neutral", "text":"We have been cosmically blessed with items {0} " },
+
+    "Needs009" : {"name":"plant", "expression": "neutral", "text":"Hello Traveler we are looking for {0}" },
+    "No009" : {"name":"plant", "expression": "neutral", "text":"You have nothing we want" },
+    "Has009" : {"name":"plant", "expression": "neutral", "text":"We have items {0} " }
+
 }
