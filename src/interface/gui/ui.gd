@@ -24,15 +24,15 @@ func update_stock():
 	Parts.ResourceCount = PlayerData.get_Inventory("Parts")
 	Water.ResourceCount = PlayerData.get_Inventory("Water") 
 
-func update_quest():
+func update_quest(_NewItem:String):
 	for key in PlayerData.QuestItems:
 		if PlayerData.QuestItems[key]:
 			match(key):
-				"Broom":
+				"broom":
 					$Panel/QuestItem1.visible=true
-				"Map":
+				"map":
 					$Panel/QuestItem2.visible=true
-				"Storage":
+				"storage":
 					$Panel/QuestItem3.visible=true
 				
 # Called every frame. 'delta' is the elapsed time since the previous frame.

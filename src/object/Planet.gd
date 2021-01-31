@@ -4,7 +4,7 @@ export (String) var Name:String = "X1234"
 export (Dictionary) var needs:Dictionary = {Gold=0,Food=1,Parts=0,Water=0} 
 export (Dictionary) var has:Dictionary = {Gold=1,Food=0,Parts=0,Water=0.5} 
 export (Dictionary) var QuestItemsNeeds:Dictionary = {Gold=0,Food=0,Parts=0,Water=10} 
-export (String) var QuestItemsHas:String = "Broom" 
+export (String) var QuestItemsHas:String = "broom" 
 export (String) var FirstDialog:String ="plantSayHello"
 export (String) var QuestDialog:String ="plantSayQuest"
 # Declare member variables here. Examples:

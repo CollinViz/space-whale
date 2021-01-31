@@ -12,10 +12,6 @@ script = ExtResource( 6 )
 
 [node name="background1" parent="." instance=ExtResource( 2 )]
 
-[node name="Player" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1583.17, 914.105 )
-deceleration_radius = 180.0
-
 [node name="Planet" parent="." instance=ExtResource( 1 )]
 position = Vector2( 344.589, 964.398 )
 FirstDialog = "1b_plantSayHello"
@@ -33,5 +29,9 @@ QuestDialog = "3b_plantSayQuest"
 
 [node name="Camera" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1474.62, 899.04 )
+
+[node name="Player" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1583.17, 914.105 )
+deceleration_radius = 180.0
 
 [node name="Gui" parent="." instance=ExtResource( 3 )]

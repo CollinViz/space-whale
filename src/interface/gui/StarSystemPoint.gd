@@ -25,7 +25,7 @@ func hideShowYouAreHear(value):
 func _on_StarSys1_gui_input(event):
 	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and event.is_pressed():
 		if !AreYouHere:
-			if QuestItem!="" and PlayerData.add_QuestItem(QuestItem):
+			if QuestItem!="" and PlayerData.checkQuest(QuestItem):
 				emit_signal("TryFly",starSysPath1)
 			else:
 				if DialogScript!="":

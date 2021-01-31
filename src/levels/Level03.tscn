@@ -16,10 +16,6 @@ margin_top = -890.899
 margin_right = 2741.83
 margin_bottom = 1509.1
 
-[node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 712.719, 220.943 )
-deceleration_radius = 180.0
-
 [node name="Planet" parent="." instance=ExtResource( 2 )]
 FirstDialog = "1c_plantSayHello"
 QuestDialog = "1c_plantSayQuest"
@@ -37,5 +33,9 @@ QuestDialog = "3c_plantSayQuest"
 [node name="Camera" parent="." instance=ExtResource( 4 )]
 cameraBottom = 1300
 cameraRight = 1500
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+position = Vector2( 712.719, 220.943 )
+deceleration_radius = 180.0
 
 [node name="Gui" parent="." instance=ExtResource( 5 )]
