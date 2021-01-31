@@ -34,7 +34,7 @@ func _on_quest_gui_input(event):
 		if !PlayerData.PlayerBeenPlanet(Name): 
 			PlayerData.set_PlayerBeenPlanet(Name)
 		else:
-			if !PlayerData.checkQuest(QuestItemsNeeds,QuestItemsHas) and QuestItemsHas!="":
+			if !PlayerData.checkQuest(QuestItemsHas) and QuestItemsHas!="":
 				DialogText = QuestDialog
 
 		get_parent().showDialog(Global.Plant2Dialog(Name,needs,has,QuestItemsNeeds,QuestItemsHas,DialogText))

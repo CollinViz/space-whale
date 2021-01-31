@@ -1,0 +1,6 @@
+{
+    "001" : {"name":"whale", "expression": "neutral", "text":"You need to find a Whale scratcher" },
+    "002" : {"name":"whale", "expression": "neutral", "text":"I cannot fly with out it" }, 
+    "003" : {"name":"whale", "expression": "neutral", "text":"Space Barnacles" }, 
+    "004" : {"name":"whale", "expression": "neutral", "text":"Maybe one of the planets will have one for triad" } 
+}

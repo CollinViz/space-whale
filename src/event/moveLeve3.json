@@ -1,0 +1,6 @@
+{
+    "001" : {"name":"whale", "expression": "neutral", "text":"You need to find a navigation map" },
+    "002" : {"name":"whale", "expression": "neutral", "text":"I cannot fly with out it" }, 
+    "003" : {"name":"whale", "expression": "neutral", "text":"Maybe one of the planets will have one for triad" } 
+    
+}

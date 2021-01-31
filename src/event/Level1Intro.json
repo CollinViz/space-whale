@@ -1,0 +1,6 @@
+{
+    "001" : {"name":"whale", "expression": "neutral", "text":"You can ask me to move by left clicking" },
+    "002" : {"name":"whale", "expression": "neutral", "text":"Move the camera you W,A,S,D" }, 
+    "003" : {"name":"whale", "expression": "neutral", "text":"Look around some plants will triad with use" } 
+    
+}

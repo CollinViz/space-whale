@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://assests/icon/quest_icon.png" type="Texture" id=1]
+[ext_resource path="res://assests/Icons_Storage_small.png" type="Texture" id=1]
 [ext_resource path="res://src/interface/gui/QuestItem.gd" type="Script" id=2]
 
 [node name="QuestItem" type="Control"]
@@ -12,9 +12,9 @@ __meta__ = {
 }
 
 [node name="Item" type="TextureRect" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
-rect_scale = Vector2( 0.35, 0.35 )
+margin_right = 64.0
+margin_bottom = 64.0
+rect_scale = Vector2( 0.8, 0.8 )
 texture = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false

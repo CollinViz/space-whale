@@ -23,6 +23,24 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
+func Event2Dialog(Name:String,DialogText:String)->Dictionary:
+	var aReturn = {Name=Name,Text="This needs lots of work"}
+	aReturn.DialogTree  = {}
+	if DialogText!="":
+		# Load Json get all Dialge data
+		aReturn.DialogTree = load_dialogue("res://src/event/"+DialogText+".json")
+
+	aReturn.NeedsText = ""
+	aReturn.tradForText = ""
+	aReturn.questNeedsText = ""
+	aReturn.questGetText = ""
+	
+	aReturn.Needs = {}
+	aReturn.tradFor = {}
+	aReturn.questNeeds = {}
+	aReturn.questHas = {}
+
+	return aReturn
 
 func Plant2Dialog(Name:String,needs:Dictionary,has:Dictionary,QuestItemsNeeds:Dictionary,QuestItemsHas:String,DialogText:String)->Dictionary:
 	var aReturn = {Name=Name,Text="This needs lots of work"}

@@ -1,5 +1,5 @@
 { 
-    "Quest001":{"name":"plant", "expression": "neutral", "text":"I have a special item to help you ({0}) but I need {1}"},
+    "Quest001":{"name":"plant", "expression": "neutral", "text":"I see you have a space whale there\nThey love getting scratched. I have a large broom to trade"},
     "No001":{"name":"plant", "expression": "neutral", "text":"You have nothing we want"},
     "Complete001":{"name":"plant", "expression": "neutral", "text":"Here you go {0}"}
 }

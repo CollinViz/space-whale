@@ -11,13 +11,17 @@ var inventory ={Gold=0,Water=0,Food=0,Parts=0}
 var PlanetVisited ={}
 var QuestItems ={}
 
+var CurrentLevel := 1
+
 func reset():
 	self.score = 0
 	self.deaths = 0
-	inventory ={Gold=0,Water=0,Food=10,Parts=0}
+	inventory ={Gold=0,Water=0,Food=1,Parts=0}
 	PlanetVisited = {}
 	QuestItems={}
+	CurrentLevel = 1
 	emit_signal("updated")
+
 
 func get_Inventory(Invtype:String) -> int:
 	return inventory[Invtype]
@@ -48,7 +52,7 @@ func PlayerBeenPlanet(PlantName:String) ->bool:
 func set_PlayerBeenPlanet(PlantName:String) ->void:
 	PlanetVisited[PlantName]=PlantName
 
-func checkQuest(_QuestItemsNeeds:Dictionary,QuestItemsHas:String) -> bool:
+func checkQuest(QuestItemsHas:String) -> bool:
 	if QuestItemsHas=="":
 		return false 
 	if QuestItems.has(QuestItemsHas): 

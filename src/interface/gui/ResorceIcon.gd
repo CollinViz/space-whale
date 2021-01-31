@@ -6,12 +6,13 @@ extends Control
 # var b = "text"
 export var ResourceName:="Water"
 export var ResourceIcon := "W"
-
+export (Texture) var iconTexture:Texture = load("res://assests/icon/quest_objective_finished.png")
 export var ResourceCount := 0 setget updateQty
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$Count.text=" 0 " + ResourceName + "Units"
+	$icon.texture = iconTexture
 	pass # Replace with function body.
 
 

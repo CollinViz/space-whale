@@ -34,22 +34,15 @@ func _ready():
 	agent.position = GSAIUtils.to_vector3( self.position)
 	setup()
 
-# func _input(event):
-# 	if event is InputEventScreenTouch:
-# 		if event.pressed:
-# 			movePlayer(Vector3(event.position.x, event.position.y, 0))
+func changWhale_Look():
+	$Whale.changWhale_Look(get_global_mouse_position())
 	
-# 	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and event.is_pressed():
-# 		if event.pressed:
-# 			movePlayer(Vector3(event.position.x, event.position.y, 0))
 
-#func movePlayer(moveTo:Vector3):	
-#	target.position = moveTo
-
-#func _unhandled_input(event: InputEvent) -> void:#
-#	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and #event.is_pressed():
-#		movePlayer(Vector3(event.position.x, event.position.y, 0))
-
+func _unhandled_input(event: InputEvent) -> void:
+		if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and event.is_pressed():
+			target.position = Vector3(get_global_mouse_position().x, get_global_mouse_position().y, 0)
+			changWhale_Look()
+			 
 func set_linear_speed_max(value: float) -> void:
 	linear_speed_max = value
 	if not is_inside_tree():
