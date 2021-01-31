@@ -1,5 +1,5 @@
 {
-  "Quest001":{"name":"plant", "expression": "neutral", "text":"Sir! I have a special item to help you {0} Sir! but I need {1} Sir!"},
-  "No001":{"name":"plant", "expression": "neutral", "text":"Negative Sir! You have nothing we want. Sir!"},
-  "Complete001":{"name":"plant", "expression": "neutral", "text":"Yes Sir! Here you go {0} Sir!"}
+  "Quest001":{"name":"plant", "expression": "neutral", "text":"The spirit of nature and the crystaline engergy faultlines agree, I have some {0} to help you but I need {1} Serindipity, I tell you!"},
+  "No001":{"name":"plant", "expression": "neutral", "text":"Bless your heart,sweetheart. In our part of the cosmos, you have nothing we want."},
+  "Complete001":{"name":"plant", "expression": "neutral", "text":"I am blessed to share our bounty with you. Here you go {0}"}
 }

@@ -1,5 +1,5 @@
 {
-    "Needs001" : {"name":"plant", "expression": "neutral", "text":"Sir! Yes Sir! Hello Traveler we are looking for {0}" },
+    "Needs001" : {"name":"plant", "expression": "neutral", "text":"Sir! Yes Sir! Hello Sir Traveler! we are looking for {0}" },
     "No001" : {"name":"plant", "expression": "neutral", "text":"Negative Sir! You have nothing we want. Sir!" },
     "Has001" : {"name":"plant", "expression": "neutral", "text":"We have items {0} Sir!" }
 }
