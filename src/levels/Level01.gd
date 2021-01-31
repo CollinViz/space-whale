@@ -13,7 +13,10 @@ onready var Camera :=$Camera
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$Camera.position = $Player.position 
-	PlayerData.reset()
+	if !PlayerData.isFirstTimeLevel(1):
+		Dialogfrm.start(Global.Event2Dialog("....","Level1Intro"))
+		yield(Dialogfrm, "dialogue_ended")
+	PlayerData.set_CurrentLevel(1)
 	
 # func _unhandled_input(event: InputEvent) -> void:
 # 	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and event.is_pressed():

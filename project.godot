@@ -189,13 +189,14 @@ _global_script_class_icons={
 [application]
 
 config/name="space-whale"
-run/main_scene="res://src/levels/Level01.tscn"
+run/main_scene="res://src/screens/IntoSeq.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
 Global="*res://src/AutoLoad/Global.gd"
 PlayerData="*res://src/AutoLoad/PlayerData.gd"
+SoundController="*res://src/AutoLoad/SoundController.gd"
 
 [display]
 

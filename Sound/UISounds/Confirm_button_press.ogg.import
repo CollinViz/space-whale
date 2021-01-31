@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Confirm_button_press.ogg-d47c93d7b977d54d75faf226f906f841.oggstr"
+
+[deps]
+
+source_file="res://Sound/UISounds/Confirm_button_press.ogg"
+dest_files=[ "res://.import/Confirm_button_press.ogg-d47c93d7b977d54d75faf226f906f841.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

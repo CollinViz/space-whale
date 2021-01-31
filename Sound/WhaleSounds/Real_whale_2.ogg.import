@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Real_whale_2.ogg-97e138344a2b631eccf2d05351d9d38c.oggstr"
+
+[deps]
+
+source_file="res://Sound/WhaleSounds/Real_whale_2.ogg"
+dest_files=[ "res://.import/Real_whale_2.ogg-97e138344a2b631eccf2d05351d9d38c.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

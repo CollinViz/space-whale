@@ -11,11 +11,9 @@
 script = ExtResource( 6 )
 
 [node name="background1" parent="." instance=ExtResource( 2 )]
-mouse_filter = 2
 
 [node name="Player" parent="." instance=ExtResource( 5 )]
-modulate = Color( 0.227451, 0.678431, 0.137255, 1 )
-position = Vector2( 1474.62, 894.284 )
+position = Vector2( 1583.17, 914.105 )
 deceleration_radius = 180.0
 
 [node name="Planet" parent="." instance=ExtResource( 1 )]

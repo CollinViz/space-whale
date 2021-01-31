@@ -1,7 +1,7 @@
 {
     "001" : {"name":"whale", "expression": "neutral", "text":"You need to find a better storage for my snacks" },
-    "002" : {"name":"whale", "expression": "neutral", "text":"To get you back home it a long swim" }, 
-    "003" : {"name":"whale", "expression": "neutral", "text":"I need my snack or I will die" }, 
-    "004" : {"name":"whale", "expression": "neutral", "text":"Maybe one of the planets will have one for triad" } 
-    
+    "002" : {"name":"whale", "expression": "neutral", "text":"To get you back home to the other tide, is a loooong swim" },
+    "003" : {"name":"whale", "expression": "neutral", "text":"My blubber is getting thin. I need my snack or I will die" },
+    "004" : {"name":"whale", "expression": "neutral", "text":"Maybe one of the planets will have one for trade?" } 
+
 }

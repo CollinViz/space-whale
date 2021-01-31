@@ -1,0 +1,48 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://assests/Planet_0001_8.png" type="Texture" id=1]
+[ext_resource path="res://src/object/background1.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/object/Planet.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/actor/Player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assests/Planet_0003_6.png" type="Texture" id=5]
+[ext_resource path="res://src/levels/TestLevel.gd" type="Script" id=6]
+[ext_resource path="res://src/actor/Camera.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/interface/gui/Gui.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/object/IceFeild.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/object/PartsField.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/interface/Sound/Sound.tscn" type="PackedScene" id=11]
+
+[node name="TestLevel" type="Node2D"]
+script = ExtResource( 6 )
+
+[node name="background1" parent="." instance=ExtResource( 2 )]
+margin_left = -1218.75
+margin_top = -612.937
+margin_right = 2877.25
+margin_bottom = 1787.06
+
+[node name="Planet" parent="." instance=ExtResource( 3 )]
+position = Vector2( 527.411, 356.359 )
+Skin = ExtResource( 1 )
+QuestItemsHas = ""
+QuestDialog = ""
+
+[node name="Planet2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 163.925, 327.85 )
+Skin = ExtResource( 5 )
+
+[node name="Player" parent="." instance=ExtResource( 4 )]
+position = Vector2( 427.631, 99.7805 )
+deceleration_radius = 180.0
+
+[node name="Camera" parent="." instance=ExtResource( 7 )]
+
+[node name="Gui" parent="." instance=ExtResource( 8 )]
+
+[node name="PartsField" parent="." instance=ExtResource( 10 )]
+position = Vector2( 882.255, 428.78 )
+
+[node name="IceFeild" parent="." instance=ExtResource( 9 )]
+position = Vector2( 743.07, 175.104 )
+
+[node name="Sound" parent="." instance=ExtResource( 11 )]
