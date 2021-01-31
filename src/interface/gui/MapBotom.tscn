@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://assests/5Shap.png" type="Texture" id=1]
+[ext_resource path="res://assests/Icons_Map.png" type="Texture" id=1]
 [ext_resource path="res://src/interface/gui/MapBotom.gd" type="Script" id=2]
 
 [node name="MapBotom" type="Control"]
@@ -18,8 +18,10 @@ __meta__ = {
 [node name="TextureRect" type="TextureRect" parent="."]
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_top = -40.0
-margin_right = 40.0
+margin_left = -7.41623
+margin_top = -64.0974
+margin_right = 248.584
+margin_bottom = 191.903
 rect_scale = Vector2( 0.25, 0.25 )
 texture = ExtResource( 1 )
 __meta__ = {
