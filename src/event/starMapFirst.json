@@ -1,5 +1,5 @@
 {
-    "001" : {"name":"whale", "expression": "neutral", "text":"Clicking on the nodes I can give you some info on them" },    
-    "002" : {"name":"whale", "expression": "neutral", "text":"Traveling to a node cost food" }    
-    
+    "001" : {"name":"whale", "expression": "neutral", "text":"Click on the nodes so I can give you some info on them" },    
+    "002" : {"name":"whale", "expression": "neutral", "text":"Traveling to a node cost food" }
+
 }
