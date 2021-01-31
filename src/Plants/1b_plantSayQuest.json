@@ -1,0 +1,5 @@
+{
+  "Quest001":{"name":"plant", "expression": "neutral", "text":"WE HAVE SPECIAL ITEM FOR WILLY TO GET HOME {0} BUT WE NEED {1}"},
+  "No001":{"name":"plant", "expression": "neutral", "text":"NEGATIVE.NO RESOURCES WE WANT. NEGATIVE."},
+  "Complete001":{"name":"plant", "expression": "neutral", "text":"TAKE IT. HAVE SOME MORE! {0} THERE IS A LOT MORE AVAILABLE."}
+}

@@ -1,0 +1,5 @@
+{
+    "Needs001" : {"name":"plant", "expression": "neutral", "text":"Hy U. Sup! W wnt {0} Thnx! " },
+    "No001" : {"name":"plant", "expression": "neutral", "text":"Sry. Pass." },
+    "Has001" : {"name":"plant", "expression": "neutral", "text":"We sply {0} " }
+}

@@ -1,0 +1,6 @@
+{
+  "Quest001":{"name":"plant", "expression": "neutral", "text":"I hv specil itmz 4 u {0} but gmi {1}"},
+  "No001":{"name":"plant", "expression": "neutral", "text":"NVM. Pass. U got 0 itmz we want"},
+  "Complete001":{"name":"plant", "expression": "neutral", "text":"Here you go {0} If u nd mre LMK k?"}
+
+}

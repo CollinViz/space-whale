@@ -1,5 +1,5 @@
 {
-    "001" : {"name":"whale", "expression": "neutral", "text":"There is no food to make this trip" },    
-    "002" : {"name":"whale", "expression": "neutral", "text":"Maybe one of the planets will have one for triad" }    
-    
+    "001" : {"name":"whale", "expression": "neutral", "text":"Do you want me to wail from hunger? There is no food to make this trip" },    
+    "002" : {"name":"whale", "expression": "neutral", "text":"Maybe one of the planets will have one for trade?" }
+
 }

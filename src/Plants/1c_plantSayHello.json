@@ -1,0 +1,5 @@
+{
+    "Needs001" : {"name":"plant", "expression": "neutral", "text":"Bruuuuuh! You whale braaah!? We Welcome you in the name of our master, antomoshere. We are looking for {0}" },
+    "No001" : {"name":"plant", "expression": "neutral", "text":"Sorry Bruuuh. You have nothing we want" },
+    "Has001" : {"name":"plant", "expression": "neutral", "text":"We have bounty of {0} items Bruuuh." }
+}
