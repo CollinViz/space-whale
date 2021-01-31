@@ -1,5 +1,44 @@
+<<<<<<< HEAD
 { 
     "Quest001":{"name":"plant", "expression": "neutral", "text":"I have a special item to help you ({0}) but I need {1}"},
+=======
+{
+    "Quest001":{"name":"plant", "expression": "neutral", "text":"I have a special item to help you {0} but I need {1}"},
+>>>>>>> 738596f04912491d09b85179d605f0ca033ecb95
     "No001":{"name":"plant", "expression": "neutral", "text":"You have nothing we want"},
-    "Complete001":{"name":"plant", "expression": "neutral", "text":"Here you go {0}"}
+    "Complete001":{"name":"plant", "expression": "neutral", "text":"Here you go {0}"},
+
+    "Quest002":{"name":"plant", "expression": "neutral", "text":"WE HAVE SPECIAL ITEM FOR WILLY TO GET HOME {0} BUT WE NEED {1}"},
+    "No002":{"name":"plant", "expression": "neutral", "text":"NEGATIVE.NO RESOURCES WE WANT. NEGATIVE."},
+    "Complete002":{"name":"plant", "expression": "neutral", "text":"TAKE IT. HAVE SOME MORE! {0} THERE IS A LOT MORE AVAILABLE."},
+
+    "Quest003":{"name":"plant", "expression": "neutral", "text":"Our esteemed congress had a coloquiem.We have hensforth come to the erudite and unequivical conclusion that we have an item to help you {0} but we need {1}"},
+    "No003":{"name":"plant", "expression": "neutral", "text":"Unfortunately, your trade items are not favourable to us."},
+    "Complete003":{"name":"plant", "expression": "neutral", "text":"Please help yourself to {0} with our complements."},
+
+    "Quest004":{"name":"plant", "expression": "neutral", "text":"I hv specil itmz 4 u {0} but gmi {1}"},
+    "No004":{"name":"plant", "expression": "neutral", "text":"NVM. Pass. U got 0 itmz we want"},
+    "Complete004":{"name":"plant", "expression": "neutral", "text":"Here you go {0} If u nd mre LMK k?"},
+
+    "Quest005":{"name":"plant", "expression": "neutral", "text":"I have a special item to help you {0} but I need {1}"},
+    "No005":{"name":"plant", "expression": "neutral", "text":"You have nothing we want"},
+    "Complete005":{"name":"plant", "expression": "neutral", "text":"Here you go {0}"},
+
+    "Quest006":{"name":"plant", "expression": "neutral", "text":"Sir! I have a special item to help you {0} Sir! but I need {1} Sir!"},
+    "No006":{"name":"plant", "expression": "neutral", "text":"Negative Sir! You have nothing we want. Sir!"},
+    "Complete006":{"name":"plant", "expression": "neutral", "text":"Yes Sir! Here you go {0} Sir!"},
+
+    "Quest007":{"name":"plant", "expression": "neutral", "text":"I have a special item to help you {0} but we're short of {1} Bruuuh."},
+    "No007":{"name":"plant", "expression": "neutral", "text":"Sorry Bruuuh. You have nothing we want"},
+    "Complete007":{"name":"plant", "expression": "neutral", "text":"Niiiice Bruuuh! Here you go {0}"},
+
+    "Quest008":{"name":"plant", "expression": "neutral", "text":"The spirit of nature and the crystaline engergy faultlines agree, I have some {0} to help you but I need {1} Serindipity, I tell you!"},
+    "No008":{"name":"plant", "expression": "neutral", "text":"Bless your heart,sweetheart. In our part of the cosmos, you have nothing we want."},
+    "Complete008":{"name":"plant", "expression": "neutral", "text":"I am blessed to share our bounty with you. Here you go {0}"},
+
+    "Quest009":{"name":"plant", "expression": "neutral", "text":"I have a special item to help you {0} but I need {1}"},
+    "No009":{"name":"plant", "expression": "neutral", "text":"You have nothing we want"},
+    "Complete009":{"name":"plant", "expression": "neutral", "text":"Here you go {0}"}
+
+
 }
