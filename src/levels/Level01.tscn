@@ -16,11 +16,13 @@
 script = ExtResource( 5 )
 
 [node name="background1" parent="." instance=ExtResource( 2 )]
-margin_left = -2012.76
-margin_top = -1146.34
-margin_right = 2083.24
-margin_bottom = 1253.66
+margin_left = -1346.8
+margin_top = -718.226
+margin_right = 2749.2
+margin_bottom = 1681.77
+rect_scale = Vector2( 1, 1 )
 mouse_default_cursor_shape = 13
+expand = true
 
 [node name="TargetDrawer" type="Node2D" parent="."]
 visible = false

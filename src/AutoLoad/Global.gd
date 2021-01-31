@@ -28,7 +28,9 @@ func Event2Dialog(Name:String,DialogText:String)->Dictionary:
 	aReturn.DialogTree  = {}
 	if DialogText!="":
 		# Load Json get all Dialge data
+		#/home/collin/workspace/godot/space-whale/src/event/intro1.json
 		aReturn.DialogTree = load_dialogue("res://src/event/"+DialogText+".json")
+		#aReturn.DialogTree =load_dialogue("res://src/Plants/1a_plantSayHello.json")
 
 	aReturn.NeedsText = ""
 	aReturn.tradForText = ""

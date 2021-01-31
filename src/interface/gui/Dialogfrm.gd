@@ -14,8 +14,7 @@ onready var NextBut = $Panel/HBoxContainer/ButtonNext
 onready var FinishBut = $Panel/HBoxContainer/ButtonFinish
 onready var TradBut = $Panel/HBoxContainer/ButtonTrade
 onready var TradUI = $Panel/Trad
-onready var TradLine1 = $Panel/Panel/Trad/TradItem1
-onready var TradLine2 = $Panel/Panel/Trad/TradItem2
+ 
 
 var dialog: Dictionary = {}
 var aMessage:Array = []
