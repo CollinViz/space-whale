@@ -1,0 +1,5 @@
+{
+    "Needs001" : {"name":"plant", "expression": "neutral", "text":"WELCOME BIG ORGANIC ORGANISM. WE NEED {0} FOR OUR LIBERATION QUEST" },
+    "No001" : {"name":"plant", "expression": "neutral", "text":"NEGATIVE.NO RESOURCES WE WANT. NEGATIVE." },
+    "Has001" : {"name":"plant", "expression": "neutral", "text":"WE HAVE {0} " }
+}

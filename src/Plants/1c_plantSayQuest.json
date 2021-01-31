@@ -1,0 +1,5 @@
+{
+  "Quest001":{"name":"plant", "expression": "neutral", "text":"Our esteemed congress had a coloquiem.We have hensforth come to the erudite and unequivical conclusion that we have an item to help you {0} but we need {1}"},
+  "No001":{"name":"plant", "expression": "neutral", "text":"Unfortunately, your trade items are not favourable to us."},
+  "Complete001":{"name":"plant", "expression": "neutral", "text":"Please help yourself to {0} with our complements."}
+}

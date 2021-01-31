@@ -1,0 +1,5 @@
+{
+    "Needs001" : {"name":"plant", "expression": "neutral", "text":"Salutations, esteemed Traveler from our neighbouring galaxy. We are in urgent need of {0}" },
+    "No001" : {"name":"plant", "expression": "neutral", "text":"You have nothing we want. The absurdist extinction nullety of even presuming we might need anything from you!! Imagine that!" },
+    "Has001" : {"name":"plant", "expression": "neutral", "text":"We might perhaps purvey {0} items " }
+}

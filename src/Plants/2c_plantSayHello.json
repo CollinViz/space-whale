@@ -1,0 +1,5 @@
+{
+    "Needs008" : {"name":"plant", "expression": "neutral", "text":"Hello earthling Traveler from the beyond. Welcome to our humble planet.We are looking for {0}" },
+    "No008" : {"name":"plant", "expression": "neutral", "text":"Bless your heart,sweetheart. In our part of the cosmos, you have nothing we want." },
+    "Has008" : {"name":"plant", "expression": "neutral", "text":"We have been cosmically blessed with items {0} " }
+}

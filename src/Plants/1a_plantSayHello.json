@@ -1,0 +1,5 @@
+{
+    "Needs001" : {"name":"plant", "expression": "neutral", "text":"Well , What is a whale doing in these woods? Aufully long way from home! Traveler we are looking for {0}" },
+    "No001" : {"name":"plant", "expression": "neutral", "text":"You have nothing we want" },
+    "Has001" : {"name":"plant", "expression": "neutral", "text":"We have items {0} " }
+}

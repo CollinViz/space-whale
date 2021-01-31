@@ -1,0 +1,5 @@
+{
+  "Quest001":{"name":"plant", "expression": "neutral", "text":"The spirit of nature and the crystaline engergy faultlines agree, I have some {0} to help you but I need {1} Serindipity, I tell you!"},
+  "No001":{"name":"plant", "expression": "neutral", "text":"Bless your heart,sweetheart. In our part of the cosmos, you have nothing we want."},
+  "Complete001":{"name":"plant", "expression": "neutral", "text":"I am blessed to share our bounty with you. Here you go {0}"}
+}
