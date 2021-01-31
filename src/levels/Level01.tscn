@@ -31,6 +31,7 @@ position = Vector2( 98.7042, 460.223 )
 Skin = ExtResource( 8 )
 Name = "Planet1"
 FirstDialog = "A1_Hello"
+QuestDialog = "plantSayQuestBroom"
 
 [node name="Planet2" parent="." instance=ExtResource( 1 )]
 position = Vector2( 575.576, 526.819 )
