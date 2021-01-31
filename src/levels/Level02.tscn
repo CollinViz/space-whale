@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://src/object/Planet.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/object/background1.tscn" type="PackedScene" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://assests/Planet_0004_5.png" type="Texture" id=9]
 [ext_resource path="res://src/object/IceFeild.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/object/PartsField.tscn" type="PackedScene" id=11]
+[ext_resource path="res://src/interface/Sound/Sound.tscn" type="PackedScene" id=12]
 
 [node name="Level02" type="Node2D"]
 script = ExtResource( 6 )
@@ -122,3 +123,5 @@ position = Vector2( 401.637, 701.45 )
 
 [node name="PartsField" parent="." instance=ExtResource( 11 )]
 position = Vector2( 446.891, 480.833 )
+
+[node name="Sound" parent="." instance=ExtResource( 12 )]

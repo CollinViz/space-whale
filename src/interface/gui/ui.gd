@@ -15,7 +15,7 @@ func _ready():
 	update_stock()
 	var _x = PlayerData.connect("updated",self,"update_stock")
 	var _y = PlayerData.connect("QuestItemUpdate",self,"update_quest")
-	pass # Replace with function body.
+	update_quest("")
 
 
 func update_stock():
